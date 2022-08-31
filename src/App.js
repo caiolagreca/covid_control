@@ -66,7 +66,6 @@ function App() {
         setCountryInfo(data);
         setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
         setMapZoom(3.5);
-        console.log(data);
       });
   };
 
@@ -127,8 +126,8 @@ function App() {
         <CardContent>
           <h3>Total casos por país</h3>
           <Table countries={tableData} />
-          <h3 className='app__graphTitle'>{casesType} pelo mundo</h3>
-          <LineGraph className='app__graph' casesType={casesType} />
+          <h3 className="app__graphTitle">Números pelo mundo</h3>
+          <LineGraph className="app__graph" casesType={casesType} />
         </CardContent>
       </Card>
     </div>

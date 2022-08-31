@@ -1,6 +1,7 @@
 .infoBox {
   flex: 1;
   cursor: pointer;
+  height: 18vh;
 }
 
 .infoBox:not(:last-child) {
@@ -30,5 +31,27 @@
   color: #6c757d;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
-  margin-top: 15px !important;
+  
+}
+
+@media screen and (max-width: 600px){
+  .infoBox{
+    height: 19vh;
+  }
+  
+  .infoBox__title{
+    font-size: .83rem !important;
+    margin-left: -.4rem !important;
+  }
+
+  .infoBox__cases{
+    font-size: 1.15rem !important;
+    margin-left: -.4rem !important;
+  }
+
+  .infoBox__total{
+    font-size: 0.7rem !important;
+    margin-top: 0 !important;
+    margin-left: -.4rem !important;
+  }
 }
